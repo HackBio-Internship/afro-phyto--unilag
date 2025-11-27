@@ -1,0 +1,30 @@
+AfroPhyto Contributor Agreement (CC BY 4.0)
+
+Purpose:
+AfroPhyto is an open-access database of bioactive phytochemicals from African plants. Contributors help expand and improve the dataset. By submitting data, you agree to the following:
+
+1. Grant of License
+- You grant AfroPhyto the non-exclusive, worldwide, royalty-free right to use, share, and redistribute your data.
+- Your submission will be licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), with AfroPhyto as the credited entity. Individual contributors will not be cited separately.
+
+2. Attribution
+- Users of the data must provide proper attribution to AfroPhyto.
+
+3. Representations and Warranties
+- You are the original author or have the legal right to submit the data.
+- The submitted data does not infringe third-party rights.
+- AfroPhyto may edit, curate, or standardize submissions for consistency.
+
+4. No Compensation
+- Submission is voluntary. CC BY 4.0 allows anyone to use the data, including commercially, with attribution to AfroPhyto.
+
+5. Agreement Acceptance
+- By submitting data, you accept these terms.
+- AfroPhyto reserves the right to remove submissions that violate these terms.
+
+Submission Process:
+- Submit via the AfroPhyto web interface.
+- Include your name or ORCID for internal tracking (not for public attribution).
+
+Example Attribution (for users):
+“This phytochemical data is from AfroPhyto (https://afrophyto.com) and is licensed under CC BY 4.0.”
