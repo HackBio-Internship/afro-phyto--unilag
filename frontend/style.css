@@ -1,0 +1,103 @@
+/* Brand colors */
+.brand-title, .brand-text {
+    color: #21AC63;
+}
+
+/* Input focus styles */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #21AC63 !important;
+    box-shadow: 0 0 0 0.2rem rgba(33, 172, 99, 0.25) !important;
+}
+
+/* Button override */
+.btn-success {
+    background-color: #21AC63 !important;
+    border-color: #21AC63 !important;
+}
+.btn-success:hover {
+    background-color: #17874c !important;
+}
+
+/* Card hover */
+.plant-card:hover {
+    transform: translateY(-4px);
+    transition: 0.3s ease;
+}
+
+/* Remove link underlines */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* Pagination styles */
+.page-link {
+    color: #21AC63;
+}
+.page-item.active .page-link {
+    background-color: #21AC63;
+    border-color: #21AC63;
+}
+
+/* Center text for light background sections */
+.bg-light {
+    text-align: center;
+}
+
+/* Footer icon color */
+.foot-icon {
+    color: #000000;
+}
+
+/* Team card layout */
+.team-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.team-card .card-body {
+    flex: 1 1 auto;
+}
+.team-sec .col-12 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Prevent horizontal scrolling */
+.container {
+    overflow-x: hidden;
+}
+
+/* Header login/signup buttons */
+.header-auth-buttons .btn {
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    padding: 0.45rem 1.3rem;
+}
+
+/* Header button hover effects */
+.header-auth-buttons .btn-outline-success:hover {
+    background-color: #e6f4ea;
+    color: #198754;
+}
+.header-auth-buttons .btn-success:hover {
+    background-color: #145c32;
+    color: #fff;
+}
+
+/* Login and signup card */
+.auth-card {
+    max-width: 450px;
+    margin: auto;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
