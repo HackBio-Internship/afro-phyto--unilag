@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contribute/Submit Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9263f821ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<!-- Header-->
+<header class="navbar navbar-expand-md sticky-top shadow-sm py-2 bg-white">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
+            <img src="{% static 'images/logo.png' %}" width="55" class="me-2">
+            <span class="fw-bold fs-3 brand-text">AfroPhyto</span>
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'about' %}">About</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'documentation' %}">Docs</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold active" href="{% url 'contribute' %}">Contribute/Submit Data</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'team' %}">Team</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'contact' %}">Contact Us</a></li>
+                <li class="nav-item d-flex flex-column flex-md-row align-items-center gap-2 gap-md-2 ms-md-3 header-auth-buttons">
+                    <!-- Login Button -->
+                    <a href="{% url 'login' %}" class="btn btn-outline-success d-flex align-items-center gap-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Already have an account? Login">
+                        <i class="fa-solid fa-right-to-bracket"></i> Login
+                    </a>
+                    <!-- Sign Up Button -->
+                    <a href="{% url 'signup' %}" class="btn btn-success d-flex align-items-center gap-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Create a new account">
+                        <i class="fa-solid fa-user-plus"></i> Sign Up
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="py-5 bg-light border-bottom text-center">
+    <h1 class="fw-bold text-success">Submit New Plant or Phytochemical Data</h1>
+    <p class="lead w-75 mx-auto mt-3">
+        Help expand AfroPhyto by contributing validated phytochemical or plant data.  
+        All submissions undergo review by our scientific curators before being published.
+    </p>
+
+    <!-- Account Creation Message -->
+    <div class="alert alert-warning alert-dismissible fade show mt-4 mx-auto" style="max-width: 700px;" role="alert">
+        <div class="d-flex align-items-center">
+            <i class="fa-solid fa-user-plus text-warning fs-4 me-3"></i>
+            <div>
+                <strong>Important!</strong> To contribute, you must first create an account and log in. 
+                <a href="{% url 'signup' %}" class="text-success fw-semibold">Sign up now</a> to get started.
+            </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <!-- Licenses & Agreements -->
+    <div class="card container p-4 border-0 bg-light">
+        <h3 class="fw-bold text-success mb-3">Licenses & Contributor Agreement</h3>
+        <p>
+            By submitting data to AfroPhyto, you agree to the following:
+        </p>
+        <ul style="list-style-type: square;">
+            <li style="text-align:left;">
+                <strong>Contributor Agreement:</strong> Your submissions will be reviewed and curated according to AfroPhyto standards. See the full <a href="{% static 'docs/CONTRIBUTOR_AGREEMENT.pdf' %}" class="text-success fw-semibold">Contributor Agreement</a>.
+            </li>
+            <li style="text-align:left;">
+                <strong>Data License:</strong> All contributed data will be publicly licensed under <a href="{% static 'docs/DATA_LICENSE.pdf' %}" class="text-success fw-semibold">CC BY 4.0</a>, allowing others to share and adapt the data.
+            </li>
+        </ul>
+    </div>
+
+</section>
+
+
+<!-- Submission Form -->
+<section class="container py-5">
+    <div class="card shadow-sm p-4 border-0">
+        <h3 class="fw-bold text-success mb-4">Contributor Information</h3>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <label class="fw-semibold py-2">Full Name</label>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="full_name">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="fw-semibold py-2">Email</label>
+                    <input class="form-control border-success p-3 rounded-2" type="email" name="email">
+                </div>
+
+                <div class="col-12">
+                    <label class="fw-semibold py-2">Affiliation (Institution, Lab, or Organization)</label>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="affiliation">
+                </div>
+            </div>
+
+            <hr class="my-5">
+            <!-- Bulk Upload Section -->
+            <h3 class="fw-bold text-success mb-3">Bulk Upload (CSV File)</h3>
+            <p class="text-muted small mb-3">
+                Upload a CSV file containing phytochemical data, plant info, and scientific literature. Please use the 
+                <a href="#" download="AfroPhyto_CSV_Template.png" class="text-success fw-semibold">
+                    CSV Template
+                </a> 
+                as a guide to structure your data correctly.
+            </p>
+            <div class="mb-4">
+                <input type="file" accept=".csv" class="form-control border-success p-3 rounded-2" name="csv_file"/>
+                <small class="text-muted">Accepted format: CSV only — max file size 5MB.</small>
+            </div>
+
+            <hr class="my-5">
+            <!-- Manual Submission Section -->
+            <h3 class="fw-bold text-success mb-4">Manual Submission</h3>
+
+            <h4 class="fw-semibold mb-3">Plant Information</h4>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <label class="fw-semibold py-2">Scientific Name</label>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="scientific_name" />
+                </div>
+
+                <div class="col-md-6">
+                    <label class="fw-semibold py-2">Common Name(s)</label>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="common_name" />
+                </div>
+
+                <div class="col-12">
+                    <label class="fw-semibold py-2">Plant Description</label>
+                    <textarea class="form-control border-success p-3 rounded-2" rows="4" style="resize: none;" name="plant_description"></textarea>
+                </div>
+            </div>
+
+            <hr class="my-5">
+
+            <h4 class="fw-semibold mb-4">Phytochemicals Identified</h4>
+            <p class="small text-muted mb-2">Enter compounds found in the plant. You may list multiple.</p>
+            <div id="compound-entry" class="row g-4">
+                <div class="compound-row row g-4">
+                    <div class="col-md-4">
+                        <label class="fw-semibold py-2">Compound Name</label>
+                        <input class="form-control border-success p-3 rounded-2" type="text" name="compound_name"/>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="fw-semibold py-2">Class</label>
+                        <input class="form-control border-success p-3 rounded-2" type="text" name="compound_class"/>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="fw-semibold py-2">Biological Activity</label>
+                        <input class="form-control border-success p-3 rounded-2" type="text" name="biological_activity"/>
+                    </div>
+                </div>
+            </div>
+            <button id="addCompoundBtn" type="button" class="btn btn-outline-success mt-3">+ Add another compound</button>
+
+            <hr class="my-5">
+
+            <h4 class="fw-semibold mb-4">Scientific Literature</h4>
+            <p class="small text-muted">Add relevant publications supporting this data.</p>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <label class="fw-semibold py-2">Title</label>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="literature_title"/>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="fw-semibold py-2">Authors</label>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="literature_authors"/>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="fw-semibold py-2">Journal</label>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="literature_journal"/>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="fw-semibold py-2">DOI</label>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="literature_doi"/>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button id="submitDataBtn" type="submit" class="btn btn-success w-100 py-3 fs-5 rounded">Submit Data</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light border-top pt-5">
+    <div class="container pb-4">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h5 class="text-success">About</h5>
+                <p>A curated database of phytochemicals found in medicinal plants. AfroPhyto helps researchers explore chemical compositions and biological activities using verified data</p>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-success">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-dark">Browse by plants</a></li>
+                    <li><a href="#" class="text-dark">Browse by compounds</a></li>
+                    <li><a href="#" class="text-dark">Terms of use</a></li>
+                    <li><a href="#" class="text-dark">Privacy policy</a></li>
+                    <li><a href="#" class="text-dark">Disclaimer</a></li>
+                    <li><a href="#" class="text-dark">Data licensing</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="text-success p-2">Contact</h5>
+                <div class="flex gap-3">
+                    <a href="#"><i class="fa-brands fa-x-twitter foot-icon" style="font-size: 40px;"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in foot-icon" style="font-size: 40px;"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube foot-icon" style="font-size: 40px;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram foot-icon" style="font-size: 40px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-success text-white text-center py-3 small">
+        &copy; 2025 AfroPhyto: An Open Atlas of Bioactive Phytochemicals from African Plants.
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
