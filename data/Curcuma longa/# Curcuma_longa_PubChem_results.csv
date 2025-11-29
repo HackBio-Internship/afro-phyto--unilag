@@ -1,0 +1,103 @@
+Compound,CID,Canonical_SMILES,3D_Status
+dimethoxycurcumin,9952605,COC1=C(C=C(C=C1)C=CC(=O)CC(=O)C=CC2=CC(=C(C=C2)OC)OC)OC,Downloaded
+dihydrocurcumin,10429233,COC1=C(C=CC(=C1)CCC(=O)CC(=O)C=CC2=CC(=C(C=C2)O)OC)O,Downloaded
+tetrahydrobisdemethoxycurcumin,9796792,C1=CC(=CC=C1CCC(=O)CC(=O)CCC2=CC=C(C=C2)O)O,Downloaded
+2-methoxy-4-vinylphenol,332,COC1=C(C=CC(=C1)C=C)O,Downloaded
+isolongifolol,12311096,CC1(CCCC2(C3C1C(C2CO)CC3)C)C,Downloaded
+coumaric,,,Not found
+caffeic acid,689043,C1=CC(=C(C=C1C=CC(=O)O)O)O,Downloaded
+sinapic acid,10743,COC1=CC(=CC(=C1O)OC)C=CC(=O)O,Downloaded
+quercetin-3-D-galactoside,,,Not found
+casuarinin,13834145,C1C(C(OC(=O)C2=CC(=C(C(=C2C3=C(C(=C(C=C3C(=O)O1)O)O)O)O)O)O)C4C5C(C6=C(C(=C(C(=C6C(=O)O5)C7=C(C(=C(C=C7C(=O)O4)O)O)O)O)O)O)O)OC(=O)C8=CC(=C(C(=C8)O)O)O,3D not available
+isohammetin,,,Not found
+gallic acid,370,C1=C(C=C(C(=C1O)O)O)C(=O)O,Downloaded
+protocatechuic acid,72,C1=CC(=C(C=C1C(=O)O)O)O,Downloaded
+phydroxybenzoic acid,,,Not found
+vanillic acid,8468,COC1=C(C=CC(=C1)C(=O)O)O,Downloaded
+syringic acid,10742,COC1=CC(=CC(=C1O)OC)C(=O)O,Downloaded
+vanillin,1183,COC1=C(C=CC(=C1)C=O)O,Downloaded
+p-coumaric,,,Not found
+ferulic acid,445858,"COC1=C(C=CC(=C1)/C=C/C(=O)O)O",Downloaded
+Digalloyl-hexoside,,,Not found
+Caffeic acid hexoside,6124135,C1=CC(=C(C=C1C=CC(=O)OC2C(C(C(C(O2)CO)O)O)O)O)O,Downloaded
+Curdione,14106072,CC1CCC=C(CC(=O)C(CC1=O)C(C)C)C,Downloaded
+Caffeic acid,689043,C1=CC(=C(C=C1C=CC(=O)O)O)O,Downloaded
+Qurecetin-3-D-galactoside,,,Not found
+Bisdemethoxycurcumin,5315472,C1=CC(=CC=C1C=CC(=O)CC(=O)C=CC2=CC=C(C=C2)O)O,Downloaded
+Curcuminol,169436750,COC1=C(C=CC(=C1)CCC(CC(CCC2=CC(=C(C=C2)OS(=O)(=O)[O-])O)O)O)OS(=O)(=O)[O-].[Na+].[Na+],Downloaded
+Demethoxycurcumin,5469424,COC1=C(C=CC(=C1)C=CC(=O)CC(=O)C=CC2=CC=C(C=C2)O)O,Downloaded
+Isorhamnetin,5281654,COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O,Downloaded
+Valoneic acid bilactone,10151874,C1=C2C3=C(C(=C1O)O)OC(=O)C4=CC(=C(C(=C43)OC2=O)O)OC5=C(C(=C(C=C5C(=O)O)O)O)O,Downloaded
+Curcumin,969516,COC1=C(C=CC(=C1)C=CC(=O)CC(=O)C=CC2=CC(=C(C=C2)O)OC)O,Downloaded
+curcumin-O-glucuronide,,,Not found
+turmeronol B,10955433,CC1=CC(=C(C=C1)C(C)CC(=O)C=C(C)C)O,Downloaded
+turmeronol A,11117927,CC1=C(C=C(C=C1)C(C)CC(=O)C=C(C)C)O,Downloaded
+(E)-alpha-atlantone,6365122,CC1=CCC(CC1)/C(=C/C(=O)C=C(C)C)/C,Downloaded
+Bisdemethoxycurcumin,5315472,C1=CC(=CC=C1/C=C/C(=O)CC(=O)/C=C/C2=CC=C(C=C2)O)O,Not found
+ar-Turmeron,160512,CC1=CC=C(C=C1)[C@@H](C)CC(=O)C=C(C)C,Downloaded
+alpha-Zingiberene,11127403,CC1=CCC(C=C1)C(C)CCC=C(C)C,Downloaded
+beta-Phellandrene,11142,CC(C)C1CCC(=C)C=C1,Downloaded
+terpinolene,11463,CC1=CCC(=C(C)C)CC1,Downloaded
+furanodiene,9601230,CC1=CCC2=C(CC(=CCC1)C)OC=C2C,Downloaded
+curdione,14106072,CC1CCC=C(CC(=O)C(CC1=O)C(C)C)C,Downloaded
+stigmasterol,5280794,CCC(C=CC(C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C)C(C)C,Downloaded
+b-sitosterol,222284,CCC(CCC(C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C)C(C)C,Downloaded
+stigmast-4-en-3-one,5484202,CCC(CCC(C)C1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C)C(C)C,Downloaded
+terpinene-4-ol,11230,CC1=CCC(CC1)(C(C)C)O,Downloaded
+pinene,15837102,CC1=C2CC(C2(C)C)CC1,Downloaded
+beta-myrcene,31253,CC(=CCCC(=C)C=C)C,Downloaded
+alpha-phellandrene,7460,CC1=CCC(C=C1)C(C)C,Downloaded
+p-cymene,7463,CC1=CC=C(C=C1)C(C)C,Downloaded
+eucalyptol,2758,CC1(C2CCC(O1)(CC2)C)C,Downloaded
+gamma-terpinolene,,,Not found
+alpha-terpinolene,11463,CC1=CCC(=C(C)C)CC1,Downloaded
+beta-caryophyllene,5281515,CC1=CCCC(=C)C2CC(C2CC1)(C)C,Downloaded
+beta-farnesene,5281517,CC(=CCCC(=CCCC(=C)C=C)C)C,Downloaded
+gamma-curcumene,12304273,CC1=CC=C(CC1)C(C)CCC=C(C)C,Downloaded
+ar-curcumene,3083834,CC1=CC=C(C=C1)C(C)CCC=C(C)C,Downloaded
+zingiberene,92776,CC1=CCC(C=C1)C(C)CCC=C(C)C,Downloaded
+beta-bisabolene,10104370,CC1=CCC(CC1)C(=C)CCC=C(C)C,Downloaded
+alpha-santalol,11085337,CC(=CCCC1(C2CC3C1(C3C2)C)C)CO,3D not available
+beta-Atlantone,181580,CC1=CC[C@@H](CC1)C(=C)CC(=O)C=C(C)C,Downloaded
+humulene epoxide,5352470,CC1=CCCC2(C(O2)CC(C=CC1)(C)C)C,Downloaded
+zingiberenol,13213649,CC(CCC=C(C)C)C1CCC(C=C1)(C)O,Downloaded
+ar-tumerone,558221,CC1=CC=C(C=C1)C(C)CC(=O)C=C(C)C,Downloaded
+curlone,196216,CC(CC(=O)C=C(C)C)C1CCC(=C)C=C1,Downloaded
+tumerone,558173,CC1=CC=C(CC1)C(C)CC(=O)C=C(C)C,Downloaded
+artermisia ketone,68346,CC(=CC(=O)C(C)(C)C=C)C,Downloaded
+khusimone,14166207,CC1(C2CCC3(C2)C(C1=C)CCC3=O)C,3D not available
+myrcenone,6430826,CC(=CC(=O)CC(=C)C=C)C,Downloaded
+carvotanacetone,6432475,CC1=CCC(CC1=O)C(C)C,Downloaded
+thymol,6989,CC1=CC(=C(C=C1)C(C)C)O,Downloaded
+eugenol,3314,COC1=C(C=CC(=C1)CC=C)O,Downloaded
+ylangene,20055075,CC1=CCC2C3C1C2(CCC3C(C)C)C,Downloaded
+beta-cubebene,93081,CC1CCC(C2C13C2C(=C)CC3)C(C)C,Downloaded
+alpha-cedrene,6431015,CC1CCC2C13CC=C(C(C3)C2(C)C)C,Downloaded
+alpha-gurjunene,15560276,CC1CCC2C(C2(C)C)C3=C(CCC13)C,Downloaded
+aromadendrene,11095734,CC1CCC2C1C3C(C3(C)C)CCC2=C,Downloaded
+trans-alpha-bergamotene,6429302,CC1=CCC2CC1C2(C)CCC=C(C)C,Downloaded
+(e)-beta-farnesene,5281517,CC(=CCCC(=CCCC(=C)C=C)C)C,Downloaded
+alloaromadendrene,10899740,CC1CCC2C1C3C(C3(C)C)CCC2=C,Downloaded
+beta-selinene,442393,CC(=C)C1CCC2(CCCC(=C)C2C1)C,Downloaded
+gamma-muurolene,12313020,CC1=CC2C(CC1)C(=C)CCC2C(C)C,Downloaded
+delta-selinene,520383,CC1=C2C=C(CCC2(CCC1)C)C(C)C,Downloaded
+alpha-curcumene,92139,CC1=CC=C(C=C1)C(C)CCC=C(C)C,Downloaded
+alpha-selinene,10856614,CC1=CCCC2(C1CC(CC2)C(=C)C)C,Downloaded
+beta-himachalene,11586487,CC1=CC2C(=C(CCCC2(C)C)C)CC1,Downloaded
+curzerene,165365640,CCC1(CC2=C(CC1C(=C)C)C(=CO2)C)C,Downloaded
+valencene,9855795,CC1CCC=C2C1(CC(CC2)C(=C)C)C,Downloaded
+delta-cadinene,441005,CC1=CC2C(CCC(=C2CC1)C)C(C)C,Downloaded
+"eudesma-3,7(11)-diene",6432648,CC1=CCCC2(C1CC(=C(C)C)CC2)C,Downloaded
+calamenene,6429077,CC1CCC(C2=C1C=CC(=C2)C)C(C)C,Downloaded
+cedrol,65575,CC1CCC2C13CCC(C(C3)C2(C)C)(C)O,Downloaded
+spathulenol,92231,CC1(C2C1C3C(CCC3(C)O)C(=C)CC2)C,Downloaded
+longiborneol,11447401,CC1(CCCC2(C3C1C(C2(CC3)C)O)C)C,Downloaded
+beta-santalol,6857681,CC(=CCCC1(C2CCC(C2)C1=C)C)CO,Downloaded
+torreyol,11990360,CC1=CC2C(CCC(C2CC1)(C)O)C(C)C,Downloaded
+beta-eudesmol,91457,CC12CCCC(=C)C1CC(CC2)C(C)(C)O,Downloaded
+alpha-cadinol,10398656,CC1=CC2C(CCC(C2CC1)(C)O)C(C)C,Downloaded
+alpha-bisabolol,1549992,CC1=CCC(CC1)C(C)(CCC=C(C)C)O,Downloaded
+germacrone,6436348,CC1=CCC(=C(C)C)C(=O)CC(=CCC1)C,Downloaded
+zerumbone,5470187,CC1=CCC(C=CC(=O)C(=CCC1)C)(C)C,Downloaded
+(-)-drimenol,3080551,CC1=CCC2C(CCCC2(C1CO)C)(C)C,Downloaded
+beta-pinene,14896,CC1(C2CCC(=C)C1C2)C,Downloaded
