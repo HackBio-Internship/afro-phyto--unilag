@@ -1,0 +1,42 @@
+Compound,CID,Canonical_SMILES,3D_Status
+Rhamnetin,5281691,COC1=CC(=C2C(=C1)OC(=C(C2=O)O)C3=CC(=C(C=C3)O)O)O,Downloaded
+Biflorin,441959,CC1=CC(=O)C2=C(O1)C=C(C(=C2O)C3C(C(C(C(O3)CO)O)O)O)O,Downloaded
+Gallic acid,370,C1=C(C=C(C(=C1O)O)O)C(=O)O,Downloaded
+Quinic acid,6508,C1C(C(C(CC1(C(=O)O)O)O)O)O,Downloaded
+Ellagic acid,5281855,C1=C2C3=C(C(=C1O)O)OC(=O)C4=CC(=C(C(=C43)OC2=O)O)O,Downloaded
+Syringic acid,10742,COC1=CC(=CC(=C1O)OC)C(=O)O,Downloaded
+Caffeic acid,689043,C1=CC(=C(C=C1C=CC(=O)O)O)O,Downloaded
+kaempferol,5280863,C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O,Downloaded
+Monogalloyl glucose,,,Not found
+Phenylacetic acid,999,C1=CC=C(C=C1)CC(=O)O,Downloaded
+p‐hydroxybenzoic acid,,,Not found
+Eugenin,10189,CC1=CC(=O)C2=C(C=C(C=C2O1)OC)O,Downloaded
+Eugenitin,3083581,CC1=CC(=O)C2=C(C(=C(C=C2O1)OC)C)O,Downloaded
+Piperic acid,5370536,C1OC2=C(O1)C=C(C=C2)C=CC=CC(=O)O,Downloaded
+Ferulic acid,445858,COC1=C(C=CC(=C1)C=CC(=O)O)O,Downloaded
+Myricetin,5281672,C1=C(C=C(C(=C1O)O)O)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O,Downloaded
+kaempferol‐3‐glucoside,,,Not found
+Delphinidin,128853,C1=C(C=C(C(=C1O)O)O)C2=[O+]C3=CC(=CC(=C3C=C2O)O)O,Downloaded
+Phloroglucinol,359,C1=C(C=C(C=C1O)O)O,Downloaded
+Digalloyl glucose,,,Not found
+Eugenol,3314,COC1=C(C=CC(=C1)CC=C)O,Downloaded
+Quercetin,5280343,C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O,Downloaded
+"Kaempferol‐3,5‐dimethyl ether",,,Not found
+Ursolic acid,64945,CC1CCC2(CCC3(C(=CCC4C3(CCC5C4(CCC(C5(C)C)O)C)C)C2C1C)C)C(=O)O,Downloaded
+Beta-Caryophyllene,5281515,CC1=CCCC(=C)C2CC(C2CC1)(C)C,Downloaded
+Vanillin,1183,COC1=C(C=CC(=C1)C=O)O,Downloaded
+Maslinic acid,73659,CC1(CCC2(CCC3(C(=CCC4C3(CCC5C4(CC(C(C5(C)C)O)O)C)C)C2C1)C)C(=O)O)C,Downloaded
+Carvacrol,10364,CC1=C(C=C(C=C1)C(C)C)O,Downloaded
+Bicornin,71308161,C1C2C(C(C(C(O2)OC(=O)C3=CC(=C(C(=C3)O)O)O)OC(=O)C4=CC(=C(C(=C4)O)O)O)OC(=O)C5=CC(=C(C(=C5)O)O)O)OC(=O)C6=CC(=C(C7=C6C8=C(C(=C(C=C8C(=O)O7)O)OC9=C(C(=C(C=C9C(=O)O1)O)O)O)O)O)O,3D not available
+Oleanolic acid,10494,CC1(CCC2(CCC3(C(=CCC4C3(CCC5C4(CCC(C5(C)C)O)C)C)C2C1)C)C(=O)O)C,Downloaded
+Stigmasterol,5280794,CCC(C=CC(C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C)C(C)C,Downloaded
+Campesterol,173183,CC(C)C(C)CCC(C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C,Downloaded
+Myricetin,5281672,C1=C(C=C(C(=C1O)O)O)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O,Downloaded
+Humulene,5281520,CC1=CCC(C=CCC(=CCC1)C)(C)C,Downloaded
+Copaene,12303902,CC1=CCC2C3C1C2(CCC3C(C)C)C,Downloaded
+Eugenyl acetate,7136,CC(=O)OC1=C(C=C(C=C1)CC=C)OC,Downloaded
+Coumarin,323,C1=CC=C2C(=C1)C=CC(=O)O2,Downloaded
+Catechine,,,Not found
+Cafein,,,Not found
+Rutin,5280805,CC1C(C(C(C(O1)OCC2C(C(C(C(O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)O)O)O)O)O)O)O,Downloaded
+(Z) Caryophyllene,,,Not found
