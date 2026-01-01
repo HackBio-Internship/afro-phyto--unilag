@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<!-- Header-->
+<!-- Header -->
 <header class="navbar navbar-expand-md sticky-top shadow-sm py-2 bg-white">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
@@ -26,52 +26,102 @@
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'about' %}">About</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'documentation' %}">Docs</a></li>
-                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'contribute' %}">Contribute/Submit Data</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'docking_with_diffdock' %}">Molecular Docking</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'contribute' %}">Contribute Data</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'team' %}">Team</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'contact' %}">Contact Us</a></li>
-                <li class="nav-item d-flex flex-column flex-md-row align-items-center gap-2 gap-md-2 ms-md-3 header-auth-buttons">
-                    <!-- Login Button -->
-                    <a href="{% url 'login' %}" class="btn btn-outline-success d-flex align-items-center gap-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Already have an account? Login">
-                        <i class="fa-solid fa-right-to-bracket"></i> Login
-                    </a>
-                    <!-- Sign Up Button -->
-                    <a href="{% url 'signup' %}" class="btn btn-success d-flex align-items-center gap-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Create a new account">
-                        <i class="fa-solid fa-user-plus"></i> Sign Up
-                    </a>
-                </li>
+
+                {% if user.is_authenticated %}
+                    <li class="nav-item ms-md-3 d-flex flex-column flex-md-row gap-2 header-auth-buttons">
+                        <a href="{% url 'dashboard' %}" class="btn btn-outline-success d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-user"></i> Dashboard
+                        </a>
+                        {% if is_manager %}
+                            <!-- <a href="{% url 'review_contributions' %}" class="btn btn-warning d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-check"></i> Review
+                            </a>-->
+                        {% endif %}
+                        <a href="{% url 'logout' %}" class="btn btn-danger d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-right-from-bracket"></i> Logout
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="nav-item ms-md-3 d-flex flex-column flex-md-row gap-2 header-auth-buttons">
+                        <a href="{% url 'login' %}" class="btn btn-outline-success d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-right-to-bracket"></i> Login
+                        </a>
+                        <a href="{% url 'signup' %}" class="btn btn-success d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-user-plus"></i> Sign Up
+                        </a>
+                    </li>
+                {% endif %}
             </ul>
         </nav>
     </div>
 </header>
 
-<!--Login Section-->
-<div class="auth-card card border-1 shadow-sm p-4 rounded-3 bg-white">
-    <div class="text-center mb-4">
+<!-- Login Form -->
+<div class="auth-card card border-1 shadow-sm p-4 rounded-3 bg-white mx-auto mt-5" style="max-width: 450px;">
+    <div class="text-center mb-1">
         <img src="{% static 'images/logo.png' %}" width="60" class="mb-2">
+        <h2 class="fw-bold text-success">Welcome Back</h2>
+        <p class="text-center text-muted">Login to continue your contribution</p>
     </div>
-    <h2 class="fw-bold text-center text-success mb-3">Welcome Back</h2>
-    <p class="text-center text-muted mb-4">Login to continue your contribution</p>
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
+    <!-- Non-field errors -->
+    {% if form.non_field_errors %}
+        <div class="alert alert-danger">
+            {% for error in form.non_field_errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
     <form method="POST">
         {% csrf_token %}
+
+        <!-- Username -->
         <div class="mb-3">
-            <label class="fw-semibold py-2">Email</label>
-            <input type="email" name="email" class="form-control p-3 border-success rounded-2" placeholder="your@email.com">
+            <label class="fw-semibold py-2" for="id_username">Username</label>
+            <input type="text" name="username" id="id_username" 
+                   value="{{ form.username.value|default_if_none:'' }}" 
+                   class="form-control p-3 border-success rounded-2" 
+                   placeholder="johndoe123" required>
+            {% for error in form.username.errors %}
+                <div class="text-danger small mt-1">{{ error }}</div>
+            {% endfor %}
         </div>
+
+        <!-- Password -->
         <div class="mb-3">
-            <label class="fw-semibold py-2">Password</label>
-            <input type="password" name="password" class="form-control p-3 border-success rounded-2" placeholder="••••••••">
+            <label class="fw-semibold py-2" for="id_password">Password</label>
+            <input type="password" name="password" id="id_password" 
+                   class="form-control p-3 border-success rounded-2" 
+                   placeholder="enter your password" required>
+            {% for error in form.password.errors %}
+                <div class="text-danger small mt-1">{{ error }}</div>
+            {% endfor %}
         </div>
+
+        <!-- Remember Me -->
         <div class="form-check mb-3">
-            <input class="form-check-input" type="checkbox" id="rememberMe" name="rememberMe">
+            <input class="form-check-input" type="checkbox" id="rememberMe" name="remember_me" {% if form.remember_me.value %}checked{% endif %}>
             <label class="form-check-label" for="rememberMe">Remember Me</label>
         </div>
-        <button class="btn btn-success w-100 py-3 fw-semibold rounded-2" type="submit">Login</button>
+
+        <button type="submit" class="btn btn-success w-100 py-3 fw-semibold rounded-2">Login</button>
+
         <p class="text-center mt-3 small text-muted">
-            Don't have an account? 
-            <a href="{% url 'signup' %}" class="text-success fw-semibold">Sign up</a>
+            Don't have an account? <a href="{% url 'signup' %}" class="text-success fw-semibold">Sign Up</a>
         </p>
         <p class="small text-center">
-            <a href="#" class="text-muted">Forgot Password?</a>
+            <a href="{% url 'password_reset' %}" class="text-muted">Forgot Password?</a>
         </p>
     </form>
 </div>
