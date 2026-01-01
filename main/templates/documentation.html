@@ -11,8 +11,7 @@
 </head>
 <body>
 
-    
-<!-- Header-->
+<!-- Header -->
 <header class="navbar navbar-expand-md sticky-top shadow-sm py-2 bg-white">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
@@ -25,20 +24,36 @@
         <nav class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'about' %}">About</a></li>
-                <li class="nav-item"><a class="nav-link fw-semibold active" href="{% url 'documentation' %}">Docs</a></li>
-                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'contribute' %}">Contribute/Submit Data</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold text-success" href="{% url 'documentation' %}">Docs</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'docking_with_diffdock' %}">Molecular Docking</a></li>
+                <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'contribute' %}">Contribute Data</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'team' %}">Team</a></li>
                 <li class="nav-item"><a class="nav-link fw-semibold" href="{% url 'contact' %}">Contact Us</a></li>
-                <li class="nav-item d-flex flex-column flex-md-row align-items-center gap-2 gap-md-2 ms-md-3 header-auth-buttons">
-                    <!-- Login Button -->
-                    <a href="{% url 'login' %}" class="btn btn-outline-success d-flex align-items-center gap-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Already have an account? Login">
-                        <i class="fa-solid fa-right-to-bracket"></i> Login
-                    </a>
-                    <!-- Sign Up Button -->
-                    <a href="{% url 'signup' %}" class="btn btn-success d-flex align-items-center gap-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Create a new account">
-                        <i class="fa-solid fa-user-plus"></i> Sign Up
-                    </a>
-                </li>
+
+                {% if user.is_authenticated %}
+                    <li class="nav-item ms-md-3 d-flex flex-column flex-md-row gap-2 header-auth-buttons">
+                        <a href="{% url 'dashboard' %}" class="btn btn-outline-success d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-gauge"></i> Dashboard
+                        </a>
+                        {% if is_manager %}
+                            <!-- <a href="{% url 'review_contributions' %}" class="btn btn-warning d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-check"></i> Review
+                            </a>-->
+                        {% endif %}
+                        <a href="{% url 'logout' %}" class="btn btn-danger d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-right-from-bracket"></i> Logout
+                        </a>
+                    </li>
+                {% else %}
+                    <li class="nav-item ms-md-3 d-flex flex-column flex-md-row gap-2 header-auth-buttons">
+                        <a href="{% url 'login' %}" class="btn btn-outline-success d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-right-to-bracket"></i> Login
+                        </a>
+                        <a href="{% url 'signup' %}" class="btn btn-success d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-user-plus"></i> Sign Up
+                        </a>
+                    </li>
+                {% endif %}
             </ul>
         </nav>
     </div>
