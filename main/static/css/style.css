@@ -27,6 +27,16 @@ select:focus {
 .plant-card:hover {
     transform: translateY(-4px);
     transition: 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.plant-card img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.plant-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 /* Remove link underlines */
@@ -84,6 +94,7 @@ a:hover {
     padding: 0.45rem 1.3rem;
 }
 
+
 /* Header button hover effects */
 .header-auth-buttons .btn-outline-success:hover {
     background-color: #e6f4ea;
@@ -124,3 +135,15 @@ pre {
 section[id] {
     scroll-margin-top: 100px; 
 }
+
+/* Custom error alert box similar to your screenshot */
+.custom-password-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 0.25rem;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
