@@ -100,6 +100,8 @@
 <!-- Submission Form -->
 <section class="container py-5">
     <div class="card shadow-sm p-4 border-0">
+
+        <!-- Contributor Information Section -->
         <h3 class="fw-bold text-success mb-4">Contributor Information</h3>
 
         <form method="POST" enctype="multipart/form-data">
@@ -119,34 +121,13 @@
                     <label class="fw-semibold py-2">Affiliation (Institution, Lab, or Organization)</label>
                     <input class="form-control border-success p-3 rounded-2" type="text" name="affiliation" required>
                 </div>
-
-                <div class="col-md-12">
-                    <label class="fw-semibold py-2">Plant Image</label>
-                    <input type="file" accept="image/*" class="form-control border-success p-3 rounded-2" name="image">
-                    <small class="text-muted">Accepted formats: jpg, png, jpeg.</small>
-                </div>
             </div>
 
             <hr class="my-5">
-            <!-- Bulk Upload Section -->
-            <h3 class="fw-bold text-success mb-3">Bulk Upload (CSV File)</h3>
-            <p class="text-muted small mb-3">
-                Upload a CSV file containing phytochemical data, plant info, and scientific literature. Please use the 
-                <a href="#" download="AfroPhyto_CSV_Template.png" class="text-success fw-semibold">
-                    CSV Template
-                </a> 
-                as a guide to structure your data correctly.
-            </p>
-            <div class="mb-4">
-                <input type="file" accept=".csv" class="form-control border-success p-3 rounded-2" name="csv_file"/>
-                <small class="text-muted">Accepted format: CSV only — max file size 5MB.</small>
-            </div>
 
-            <hr class="my-5">
-            <!-- Manual Submission Section -->
-            <h3 class="fw-bold text-success mb-4">Manual Submission</h3>
+            <!--Plant Information Section-->
+            <h3 class="fw-bold text-success mb-4">Plant Information</h3>
 
-            <h4 class="fw-semibold mb-3">Plant Information</h4>
             <div class="row g-4">
                 <div class="col-md-6">
                     <label class="fw-semibold py-2">Scientific Name</label>
@@ -162,21 +143,42 @@
                     <label class="fw-semibold py-2">Plant Description</label>
                     <textarea class="form-control border-success p-3 rounded-2" rows="4" style="resize: none;" name="plant_description" required></textarea>
                 </div>
+
+                <div class="col-md-12">
+                    <label class="fw-semibold py-2">Plant Image</label>
+                    <input type="file" accept="image/*" class="form-control border-success p-3 rounded-2" name="image">
+                    <small class="text-muted">Accepted formats: jpg, png, jpeg.</small>
+                </div>
             </div>
 
             <hr class="my-5">
 
-            <h4 class="fw-semibold mb-4">Phytochemicals Identified</h4>
-            <p class="small text-muted mb-2">Enter compounds found in the plant. You may list multiple.</p>
+            <!-- Data Upload Section -->
+            <h3 class="fw-bold text-success mb-3">Upload Phytochemical Data</h3>
+            <h4 class="fw-semibold mb-3">Bulk Upload (CSV File)</h4>
+            <p class="text-muted small mb-3">
+                Upload a CSV file containing phytochemical data, plant info, and scientific literature. Please use the 
+                <a href="#" download="AfroPhyto_CSV_Template.png" class="text-success fw-semibold">
+                    CSV Template
+                </a> 
+                as a guide to structure your data correctly.
+            </p>
+            <div class="mb-4">
+                <input type="file" accept=".csv" class="form-control border-success p-3 rounded-2" name="csv_file">
+                <small class="text-muted">Accepted format: CSV only — max file size 5MB.</small>
+            </div>
+
+            <h4 class="fw-semibold mb-3">Manual Entry</h4>
+            <p class="text-muted small mb-3">Alternatively, you can manually enter phytochemical data below. Enter compounds found in the plant. You may list multiple.</p>
             <div id="compound-entry" class="row g-4">
                 <div class="compound-row row g-4">
                     <div class="col-md-4">
                         <label class="fw-semibold py-2">Compound Name</label>
-                        <input class="form-control border-success p-3 rounded-2" type="text" name="compound_name"/>
+                        <input class="form-control border-success p-3 rounded-2" type="text" name="compound_name">
                     </div>
                     <div class="col-md-4">
                         <label class="fw-semibold py-2">Class</label>
-                        <input class="form-control border-success p-3 rounded-2" type="text" name="compound_class"/>
+                        <input class="form-control border-success p-3 rounded-2" type="text" name="compound_class">
                     </div>
                 </div>
             </div>
@@ -184,7 +186,8 @@
 
             <hr class="my-5">
 
-            <h4 class="fw-semibold mb-4">Scientific Literature</h4>
+            <!--Scientific Literature-->
+            <h3 class="fw-bold text-success mb-4">Scientific Literature</h3>
             <p class="small text-muted">Add relevant publications supporting this data.</p>
             <div class="row g-4">
                 <div class="col-md-6">
@@ -194,7 +197,7 @@
 
                 <div class="col-md-6">
                     <label class="fw-semibold py-2">Authors</label>
-                    <input class="form-control border-success p-3 rounded-2" type="text" name="literature_authors"required>
+                    <input class="form-control border-success p-3 rounded-2" type="text" name="literature_authors" required>
                 </div>
 
                 <div class="col-md-6">
