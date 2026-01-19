@@ -118,17 +118,6 @@
                                    class="btn btn-outline-primary btn-sm">
                                     View
                                 </a>
-
-                                {% if contrib.status == "pending" %}
-                                    <a href="{% url 'approve_contribution' contrib.id %}"
-                                       class="btn btn-success btn-sm">
-                                        Approve
-                                    </a>
-                                    <a href="{% url 'reject_contribution' contrib.id %}"
-                                       class="btn btn-danger btn-sm">
-                                        Reject
-                                    </a>
-                                {% endif %}
                             </td>
                         </tr>
                     {% endfor %}
