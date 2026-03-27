@@ -498,6 +498,8 @@ def export_plant_phytochemicals_csv(request, plant_id):
     return response
 
 # NVIDIA Diffdock
+def docking_with_diffdock(request):
+    pass
 
 def docking_submitted(request, job_id):
     job = get_object_or_404(DockingJob, job_id=job_id)
