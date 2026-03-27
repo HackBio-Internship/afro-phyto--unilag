@@ -1,0 +1,85 @@
+dimethoxycurcumin: COC1=C(C=C(C=C1)C=CC(=O)CC(=O)C=CC2=CC(=C(C=C2)OC)OC)OC
+dihydrocurcumin: COC1=C(C=CC(=C1)CCC(=O)CC(=O)C=CC2=CC(=C(C=C2)O)OC)O
+tetrahydrobisdemethoxycurcumin: C1=CC(=CC=C1CCC(=O)CC(=O)CCC2=CC=C(C=C2)O)O
+2-methoxy-4-vinylphenol: COC1=C(C=CC(=C1)C=C)O
+isolongifolol: CC1(CCCC2(C3C1C(C2CO)CC3)C)C
+caffeic acid: C1=CC(=C(C=C1C=CC(=O)O)O)O
+sinapic acid: COC1=CC(=CC(=C1O)OC)C=CC(=O)O
+casuarinin: C1C(C(OC(=O)C2=CC(=C(C(=C2C3=C(C(=C(C=C3C(=O)O1)O)O)O)O)O)O)C4C5C(C6=C(C(=C(C(=C6C(=O)O5)C7=C(C(=C(C=C7C(=O)O4)O)O)O)O)O)O)O)OC(=O)C8=CC(=C(C(=C8)O)O)O
+gallic acid: C1=C(C=C(C(=C1O)O)O)C(=O)O
+protocatechuic acid: C1=CC(=C(C=C1C(=O)O)O)O
+vanillic acid: COC1=C(C=CC(=C1)C(=O)O)O
+syringic acid: COC1=CC(=CC(=C1O)OC)C(=O)O
+vanillin: COC1=C(C=CC(=C1)C=O)O
+ferulic acid: COC1=C(C=CC(=C1)C=CC(=O)O)O
+Caffeic acid hexoside: C1=CC(=C(C=C1C=CC(=O)OC2C(C(C(C(O2)CO)O)O)O)O)O
+Caffeic acid: C1=CC(=C(C=C1C=CC(=O)O)O)O
+Bisdemethoxycurcumin: C1=CC(=CC=C1C=CC(=O)CC(=O)C=CC2=CC=C(C=C2)O)O
+Demethoxycurcumin: COC1=C(C=CC(=C1)C=CC(=O)CC(=O)C=CC2=CC=C(C=C2)O)O
+Isorhamnetin: COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O
+Curcumin: COC1=C(C=CC(=C1)C=CC(=O)CC(=O)C=CC2=CC(=C(C=C2)O)OC)O
+turmeronol B: CC1=CC(=C(C=C1)C(C)CC(=O)C=C(C)C)O
+turmeronol A: CC1=C(C=C(C=C1)C(C)CC(=O)C=C(C)C)O
+alpha-Zingiberene: CC1=CCC(C=C1)C(C)CCC=C(C)C
+beta-Phellandrene: CC(C)C1CCC(=C)C=C1
+terpinolene: CC1=CCC(=C(C)C)CC1
+furanodiene: CC1=CCC2=C(CC(=CCC1)C)OC=C2C
+curdione: CC1CCC=C(CC(=O)C(CC1=O)C(C)C)C
+stigmasterol: CCC(C=CC(C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C)C(C)C
+b-sitosterol: CCC(CCC(C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C)C(C)C
+stigmast-4-en-3-one: CCC(CCC(C)C1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C)C(C)C
+terpinene-4-ol: CC1=CCC(CC1)(C(C)C)O
+pinene: CC1=C2CC(C2(C)C)CC1
+beta-myrcene: CC(=CCCC(=C)C=C)C
+alpha-phellandrene: CC1=CCC(C=C1)C(C)C
+p-cymene: CC1=CC=C(C=C1)C(C)C
+eucalyptol: CC1(C2CCC(O1)(CC2)C)C
+alpha-terpinolene: CC1=CCC(=C(C)C)CC1
+beta-caryophyllene: CC1=CCCC(=C)C2CC(C2CC1)(C)C
+beta-farnesene: CC(=CCCC(=CCCC(=C)C=C)C)C
+gamma-curcumene: CC1=CC=C(CC1)C(C)CCC=C(C)C
+ar-curcumene: CC1=CC=C(C=C1)C(C)CCC=C(C)C
+zingiberene: CC1=CCC(C=C1)C(C)CCC=C(C)C
+beta-bisabolene: CC1=CCC(CC1)C(=C)CCC=C(C)C
+alpha-santalol: CC(=CCCC1(C2CC3C1(C3C2)C)C)CO
+humulene epoxide: CC1=CCCC2(C(O2)CC(C=CC1)(C)C)C
+zingiberenol: CC(CCC=C(C)C)C1CCC(C=C1)(C)O
+ar-tumerone: CC1=CC=C(C=C1)C(C)CC(=O)C=C(C)C
+curlone: CC(CC(=O)C=C(C)C)C1CCC(=C)C=C1
+tumerone: CC1=CC=C(CC1)C(C)CC(=O)C=C(C)C
+khusimone: CC1(C2CCC3(C2)C(C1=C)CCC3=O)C
+myrcenone: CC(=CC(=O)CC(=C)C=C)C
+carvotanacetone: CC1=CCC(CC1=O)C(C)C
+thymol: CC1=CC(=C(C=C1)C(C)C)O
+eugenol: COC1=C(C=CC(=C1)CC=C)O
+ylangene: CC1=CCC2C3C1C2(CCC3C(C)C)C
+beta-cubebene: CC1CCC(C2C13C2C(=C)CC3)C(C)C
+alpha-cedrene: CC1CCC2C13CC=C(C(C3)C2(C)C)C
+alpha-gurjunene: CC1CCC2C(C2(C)C)C3=C(CCC13)C
+aromadendrene: CC1CCC2C1C3C(C3(C)C)CCC2=C
+trans-alpha-bergamotene: CC1=CCC2CC1C2(C)CCC=C(C)C
+(e)-beta-farnesene: CC(=CCCC(=CCCC(=C)C=C)C)C
+alloaromadendrene: CC1CCC2C1C3C(C3(C)C)CCC2=C
+beta-selinene: CC(=C)C1CCC2(CCCC(=C)C2C1)C
+gamma-muurolene: CC1=CC2C(CC1)C(=C)CCC2C(C)C
+delta-selinene: CC1=C2C=C(CCC2(CCC1)C)C(C)C
+alpha-curcumene: CC1=CC=C(C=C1)C(C)CCC=C(C)C
+alpha-selinene: CC1=CCCC2(C1CC(CC2)C(=C)C)C
+beta-himachalene: CC1=CC2C(=C(CCCC2(C)C)C)CC1
+curzerene: CCC1(CC2=C(CC1C(=C)C)C(=CO2)C)C
+valencene: CC1CCC=C2C1(CC(CC2)C(=C)C)C
+delta-cadinene: CC1=CC2C(CCC(=C2CC1)C)C(C)C
+eudesma-3,7(11)-diene: CC1=CCCC2(C1CC(=C(C)C)CC2)C
+calamenene: CC1CCC(C2=C1C=CC(=C2)C)C(C)C
+cedrol: CC1CCC2C13CCC(C(C3)C2(C)C)(C)O
+spathulenol: CC1(C2C1C3C(CCC3(C)O)C(=C)CC2)C
+longiborneol: CC1(CCCC2(C3C1C(C2(CC3)C)O)C)C
+beta-santalol: CC(=CCCC1(C2CCC(C2)C1=C)C)CO
+torreyol: CC1=CC2C(CCC(C2CC1)(C)O)C(C)C
+beta-eudesmol: SMILES not found
+alpha-cadinol: CC1=CC2C(CCC(C2CC1)(C)O)C(C)C
+alpha-bisabolol: CC1=CCC(CC1)C(C)(CCC=C(C)C)O
+germacrone: CC1=CCC(=C(C)C)C(=O)CC(=CCC1)C
+zerumbone: CC1=CCC(C=CC(=O)C(=CCC1)C)(C)C
+(-)-drimenol: CC1=CCC2C(CCCC2(C1CO)C)(C)C
+beta-pinene: CC1(C2CCC(=C)C1C2)C
