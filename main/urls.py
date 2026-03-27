@@ -33,13 +33,8 @@ urlpatterns = [
     path('reset/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='password_reset_confirm.html'), name='password_reset_confirm'),
     path('reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='password_reset_complete.html'), name='password_reset_complete'),
 
-    # Manager Review
-    path('review-contributions/', views.review_contributions, name='review_contributions'),
-    path('approve/<int:contrib_id>/', views.approve_contribution, name='approve_contribution'),
-    path('reject/<int:contrib_id>/', views.reject_contribution, name='reject_contribution'),
-
     # Review & Approval
-    path('review/', views.review_contributions, name='review_contributions'),
+    path('review-contributions/', views.review_contributions, name='review_contributions'),
     path('approve/<int:contrib_id>/', views.approve_contribution, name='approve_contribution'),
     path('reject/<int:contrib_id>/', views.reject_contribution, name='reject_contribution'),
 
