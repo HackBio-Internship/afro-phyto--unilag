@@ -24,7 +24,8 @@ class Contributor(models.Model):
         max_length=20,
         unique=True,
         editable=False,
-        default=generate_accession_number
+        default=generate_accession_number,
+        help_text="Submission accession number (not phytochemical accession)"
     )
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='contributions')
     scientific_name = models.CharField(max_length=255, blank=True, null=True)
@@ -60,9 +61,23 @@ class Plant(models.Model):
 # Phytochemical Model/Table
 class Phytochemical(models.Model):
     plant = models.ForeignKey(Plant, on_delete=models.CASCADE, related_name='phytochemicals')
+    
     compound_name = models.CharField(max_length=255)
     compound_class = models.CharField(max_length=255, blank=True)
+    
+    # Core structure
     smiles = models.TextField(blank=True)
+    inchikey = models.CharField(max_length=50, blank=True)
+    pubchem_cid = models.CharField(max_length=50, blank=True)
+    
+    # Drug likeness descriptors
+    molecular_weight = models.FloatField(null=True, blank=True)
+    logp = models.FloatField(null=True, blank=True)
+    h_donors = models.IntegerField(null=True, blank=True)
+    h_acceptors = models.IntegerField(null=True, blank=True)
+
+    # Decision flag
+    lipinski_pass = models.BooleanField(null=True, blank=True)
 
     def __str__(self):
         return self.compound_name
