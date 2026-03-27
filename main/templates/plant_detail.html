@@ -117,9 +117,16 @@
                                 <th>Compound Name</th>
                                 <th>Class</th>
                                 <th>SMILES</th>
+                                <th>PubChem</th>
+                                <th>InChIKey</th>
+                                <th>MW</th>
+                                <th>LogP</th>
+                                <th>H-Donors</th>
+                                <th>H-Acceptors</th>
+                                <th>Lipinski</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class>
                             {% for compound in phytochemicals %}
                                 <tr>
                                     <td class="fw-semibold">
@@ -128,9 +135,43 @@
                                     <td>
                                         {{ compound.compound_class }}
                                     </td>
-                                    <td class="small text-break">
+                                    <td class="small text-break" style="max-width:200px; word-break:break-all;">
                                         {{ compound.smiles|default:"Not available" }}
                                     </td>
+                                    <td>
+                                        {% if compound.pubchem_cid %}
+                                            <a href="https://pubchem.ncbi.nlm.nih.gov/compound/{{ p.pubchem_cid }}" target="_blank" class="btn btn-sm btn-outline-primary">
+                                                View 
+                                            </a>
+                                        {% else %}
+                                            -
+                                         {% endif %}
+
+                                    </td>
+                                    <td style="font-size: 12px;">
+                                        {{ compound.inchikey|default:"-" }}
+                                    </td>
+                                    <td>
+                                        {{ compound.molecular_weight|default:"-"|floatformat:2 }}
+                                    </td>
+                                    <td>
+                                        {{ compound.logp|default:"-"|floatformat:2 }}
+                                    </td>
+                                    <td>
+                                        {{ compound.h_donors|default:"-" }}
+                                    </td>
+                                    <td>
+                                        {{ compound.h_acceptors|default:"-" }}
+                                    </td>
+                                    <td>
+                                        {% if compound.lipinski_pass == True %}
+                                            <span class="badge bg-success">PASS</span>
+                                        {% elif compound.lipinski_pass == False %}
+                                            <span class="badge bg-danger">FAIL</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">N/A</span>
+                                        {% endif %}
+                            </td>
                                 </tr>
                             {% endfor %}
                         </tbody>
