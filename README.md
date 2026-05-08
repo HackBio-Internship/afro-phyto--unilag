@@ -22,7 +22,7 @@ The project aims to centralize African plant phytochemical data and facilitate n
 
 We welcome contributions from researchers worldwide!  
 
-1. Submit new phytochemical data via the [AfroPhyto web interface](#)  
+1. Submit new phytochemical data via the [AfroPhyto web interface](https://internship.thehackbio.com/afrophyto)  
 2. Follow the [AfroPhyto Contributor Agreement](#) for terms of submission  
 3. All submissions are curated for consistency and accuracy before being added to the database  
 
